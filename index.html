@@ -87,18 +87,36 @@
           </ul>
         </div>
 
-        <aside class="hero-card" aria-label="Service summary">
-          <p class="card-label">Popular services</p>
-          <ul>
-            <li>Septic tank pumping</li>
-            <li>Real estate inspections</li>
-            <li>Maintenance reminders</li>
-            <li>Baffle and lid checks</li>
-            <li>Drain field troubleshooting</li>
-          </ul>
+        <aside class="hero-card" aria-label="Quick service request form">
+          <p class="card-label">Request service</p>
+          <p class="hero-form-intro">Send a quick request and it will open an email addressed to the owner.</p>
+          <form class="hero-form" action="mailto:service@centralpaseptic.com" method="post" enctype="text/plain">
+            <label for="request-name">Name</label>
+            <input id="request-name" name="Name" type="text" autocomplete="name" required>
+
+            <label for="request-phone">Phone</label>
+            <input id="request-phone" name="Phone" type="tel" autocomplete="tel" required>
+
+            <label for="request-email">Email</label>
+            <input id="request-email" name="Email" type="email" autocomplete="email">
+
+            <label for="request-service">Service needed</label>
+            <select id="request-service" name="Service Needed" required>
+              <option value="" selected disabled>Select a service</option>
+              <option value="Septic tank pumping">Septic tank pumping</option>
+              <option value="Inspection">Inspection</option>
+              <option value="Repair">Repair</option>
+              <option value="Maintenance plan">Maintenance plan</option>
+            </select>
+
+            <label for="request-message">Message</label>
+            <textarea id="request-message" name="Message" rows="4" placeholder="Address, urgency, or any details"></textarea>
+
+            <button class="button" type="submit">Email request</button>
+          </form>
           <div class="hero-card-footer">
             <strong>Open Monday to Saturday</strong>
-            <span>Emergency callouts available by request</span>
+            <span>Calls: (717) 555-0142</span>
           </div>
         </aside>
       </div>
