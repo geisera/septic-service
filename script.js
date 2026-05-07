@@ -6,8 +6,9 @@ const footerNav = document.getElementById('footer-nav');
 const pathname = window.location.pathname;
 const isPostPage = pathname.includes('/posts/');
 const isBlogPage = pathname.endsWith('/blog.html');
+const isIndexPage = pathname.endsWith('/index.html') || pathname.endsWith('/');
 
-const navVariant = isPostPage ? 'post' : (isBlogPage ? 'blog' : 'index');
+const navVariant = isPostPage ? 'post' : (isBlogPage ? 'blog' : (isIndexPage ? 'index' : 'root'));
 const navFragmentsPath = isPostPage ? '../nav-fragments.html' : 'nav-fragments.html';
 
 const bindMenuBehavior = () => {
