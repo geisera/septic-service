@@ -247,6 +247,7 @@ img {
 
 .hero-card {
   padding: 1.6rem;
+  background: #f0ece0;
 }
 
 .hero-form-intro {
@@ -262,19 +263,19 @@ img {
 .hero-form label {
   font-size: 0.88rem;
   font-weight: 600;
-  color: var(--text);
+  color: var(--brand);
 }
 
 .hero-form input,
 .hero-form select,
 .hero-form textarea {
   width: 100%;
-  border: 1px solid var(--line);
+  border: 1.5px solid var(--line);
   border-radius: 12px;
   padding: 0.7rem 0.8rem;
   font: inherit;
   color: var(--text);
-  background: rgba(255, 255, 255, 0.9);
+  background: #fff;
 }
 
 .hero-form textarea {
@@ -285,8 +286,9 @@ img {
 .hero-form input:focus,
 .hero-form select:focus,
 .hero-form textarea:focus {
-  outline: 2px solid rgba(61, 106, 73, 0.35);
+  outline: none;
   border-color: var(--brand-bright);
+  box-shadow: 0 0 0 3px rgba(61, 106, 73, 0.18);
 }
 
 .hero-form .button {
@@ -549,9 +551,10 @@ img {
 .bottom-form {
   display: grid;
   gap: 1.1rem;
-  background: #fff;
+  background: #e8ede9;
   border-radius: var(--radius);
   padding: 2rem;
+  box-shadow: 0 2px 16px rgba(35, 64, 51, 0.13);
 }
 
 .bottom-form-row {
@@ -567,7 +570,7 @@ img {
 .bottom-form-group label {
   font-size: 0.88rem;
   font-weight: 600;
-  color: var(--text);
+  color: var(--brand);
 }
 
 .bottom-form-group input,
