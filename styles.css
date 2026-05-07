@@ -348,7 +348,6 @@ img {
 
 .section h2 {
   font-size: clamp(2.1rem, 4vw, 3.6rem);
-  max-width: 14ch;
 }
 
 .service-grid {
