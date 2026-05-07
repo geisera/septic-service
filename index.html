@@ -169,7 +169,7 @@
           <p class="card-label">Request service</p>
           <p class="hero-form-intro">Send us a quick message and we'll get back to you — usually the same day.</p>
 
-          <form class="hero-form" action="https://api.web3forms.com/submit" method="post" novalidate>
+          <form class="hero-form" action="https://api.web3forms.com/submit" method="post">
             <input type="hidden" name="access_key" value="ad560de5-2da2-4e5e-b18c-aa7e4f2a19da">
             <input type="hidden" name="subject" value="New Service Request — Central PA Septic">
 
@@ -183,7 +183,7 @@
             <input id="request-email" name="email" type="email" autocomplete="email" placeholder="" required>
 
             <label for="request-service">Service needed</label>
-            <select id="request-service" name="service_needed">
+            <select id="request-service" name="service_needed" required>
               <option value="" selected disabled>Select a service</option>
               <option value="General questions">General questions</option>
               <option value="Septic tank pumping">Septic tank pumping</option>
@@ -192,8 +192,8 @@
               <option value="Maintenance plan">Maintenance plan</option>
             </select>
 
-            <label for="request-message">Message <span aria-hidden="true">(optional)</span></label>
-            <textarea id="request-message" name="message" rows="3" placeholder="Address, urgency, or anything helpful"></textarea>
+            <label for="request-message">Message</label>
+            <textarea id="request-message" name="message" rows="3" placeholder="Address, urgency, or anything helpful" required></textarea>
 
             <button class="button" type="submit">Send request</button>
           </form>
@@ -530,7 +530,7 @@
           </div>
         </div>
 
-        <form class="bottom-form" action="https://api.web3forms.com/submit" method="post" novalidate>
+        <form class="bottom-form" action="https://api.web3forms.com/submit" method="post">
           <input type="hidden" name="access_key" value="ad560de5-2da2-4e5e-b18c-aa7e4f2a19da">
           <input type="hidden" name="subject" value="New Service Request — Central PA Septic">
 
@@ -564,8 +564,8 @@
           </div>
 
           <div class="bottom-form-group">
-            <label for="bottom-message">Message <span aria-hidden="true">(optional)</span></label>
-            <textarea id="bottom-message" name="message" rows="4" placeholder="Property address, urgency, or anything else we should know"></textarea>
+            <label for="bottom-message">Message</label>
+            <textarea id="bottom-message" name="message" rows="4" placeholder="Property address, urgency, or anything else we should know" required></textarea>
           </div>
 
           <button class="button bottom-form-submit" type="submit">Send service request</button>
