@@ -379,7 +379,7 @@ img {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
-.blog-grid {
+.resources-grid {
   grid-template-columns: 1fr;
   max-width: 860px;
   margin: 0 auto;
@@ -733,7 +733,7 @@ img {
   }
 }
 
-/* ── Blog post pages ── */
+/* ── Resources post pages ── */
 
 .post-hero {
   width: 100vw;
