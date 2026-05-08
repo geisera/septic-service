@@ -65,3 +65,15 @@ if (yearElement) {
 }
 
 loadNavFromFragments();
+
+// ── Back to top button ──
+const backToTopBtn = document.getElementById('back-to-top');
+if (backToTopBtn) {
+  const toggleVisibility = () => {
+    backToTopBtn.classList.toggle('is-visible', window.scrollY > 400);
+  };
+  window.addEventListener('scroll', toggleVisibility, { passive: true });
+  backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}

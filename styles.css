@@ -679,6 +679,41 @@ img {
   padding: 1.5rem 0 2.5rem;
 }
 
+/* ── Back to top button ── */
+.back-to-top {
+  position: fixed;
+  bottom: 1.75rem;
+  right: 1.75rem;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: none;
+  background: var(--brand);
+  color: #fff;
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 4px 18px rgba(31, 42, 34, 0.22);
+  opacity: 0;
+  transform: translateY(0.5rem);
+  transition: opacity 0.25s, transform 0.25s, background 0.15s;
+  pointer-events: none;
+}
+
+.back-to-top.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.back-to-top:hover {
+  background: var(--brand-bright);
+}
+
 .footer-inner {
   grid-template-columns: 1fr;
   align-items: center;
