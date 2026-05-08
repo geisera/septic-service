@@ -194,6 +194,20 @@ img {
   padding: 2rem;
 }
 
+.hero-visual {
+  margin: 1.2rem 0 0;
+  border-radius: calc(var(--radius) - 8px);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  box-shadow: 0 12px 28px rgba(31, 42, 34, 0.12);
+}
+
+.hero-visual img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
 .eyebrow {
   margin: 0 0 0.75rem;
   text-transform: uppercase;
@@ -371,6 +385,15 @@ img {
   padding: 1.4rem;
 }
 
+.service-card-image {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 1rem;
+  border: 1px solid var(--line);
+}
+
 .service-card h3,
 .feature-list h3 {
   margin-top: 0;
@@ -407,6 +430,19 @@ img {
 
 .faq-list details[open] {
   background: var(--surface-strong);
+}
+
+.section-image {
+  margin: 1.2rem 0;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+}
+
+.section-image img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
 }
 
 .contact-section {
