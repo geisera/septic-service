@@ -689,6 +689,27 @@ img {
   margin: 0;
 }
 
+#footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.1rem 0;
+}
+
+#footer-nav a {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.88rem;
+  color: var(--muted);
+}
+
+#footer-nav a + a::before {
+  content: "·";
+  margin: 0 0.5rem;
+  color: var(--muted);
+  font-weight: 400;
+}
+
 @media (min-width: 760px) {
   .header-inner {
     grid-template-columns: auto minmax(0, 1fr);
