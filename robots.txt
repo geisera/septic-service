@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /nav-fragments.html
 
 Sitemap: https://www.centralpaseptic.com/sitemap.xml
