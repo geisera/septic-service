@@ -37,12 +37,41 @@
           </figure>
         </div>
 
-        <aside class="contact-card" aria-label="Contact details">
-          <p class="card-label">Direct contact</p>
+        <aside class="contact-card" aria-label="Quick request and contact details">
+          <p class="card-label">Quick request</p>
+          <form class="hero-form" action="https://api.web3forms.com/submit" method="post">
+            <input type="hidden" name="access_key" value="ad560de5-2da2-4e5e-b18c-aa7e4f2a19da">
+            <input type="hidden" name="subject" value="Quick Contact Request, Central PA Septic">
+
+            <label for="aside-name">Name</label>
+            <input id="aside-name" name="name" type="text" autocomplete="name" required>
+
+            <label for="aside-phone">Phone</label>
+            <input id="aside-phone" name="phone" type="tel" autocomplete="tel" required>
+
+            <label for="aside-email">Email</label>
+            <input id="aside-email" name="email" type="email" autocomplete="email" required>
+
+            <label for="request-service">Service needed</label>
+            <select id="request-service" name="service_needed" required>
+              <option value="" selected disabled>Select a service</option>
+              <option value="General questions">General questions</option>
+              <option value="Septic tank pumping">Septic tank pumping</option>
+              <option value="Inspection">Inspection</option>
+              <option value="Repair">Repair</option>
+              <option value="Maintenance plan">Maintenance plan</option>
+            </select>
+            
+            <label for="aside-message">Message</label>
+            <textarea id="aside-message" name="message" rows="3" placeholder="Address, urgency, and a quick description" required></textarea>
+
+            <button class="button" type="submit">Send request</button>
+          </form>
+
           <p><strong>Phone:</strong> <a href="tel:17172192315">(717) 219-2315</a></p>
           <p><strong>Email:</strong> <a href="mailto:service@centralpaseptic.com">service@centralpaseptic.com</a></p>
           <p><strong>Service Hours:</strong> Monday - Saturday, 7 AM - 6 PM</p>
-          <p><strong>Service Area:</strong> Harrisburg, Mechanicsburg, Carlisle, Camp Hill, York, Lancaster, Lebanon, Lititz, State College, Lewistown, and surrounding communities.</p>
+          <p><strong>Proudly serving:</strong> Harrisburg, Mechanicsburg, Carlisle, Camp Hill, York, Lancaster, Lebanon, Lititz, State College, Lewistown, and surrounding communities.</p>
           <p><a class="button" href="#get-started">Request service online</a></p>
         </aside>
       </div>
