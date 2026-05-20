@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /nav-fragments.html
 
-Sitemap: https://harrisburgsepticservice.com/sitemap.xml
+Sitemap: https://harrisburgpasepticservice.com/sitemap.xml
